@@ -1,0 +1,60 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <title>{% if pagename == 'index' %} KARL - Home {% else %} KARL - {{title}} {% endif %}</title>
+      <link rel="shortcut icon" href="{{ pathto('_static/images/favicon.ico', 1) }}" type="image/vnd.microsoft.icon"></link>
+      <link rel="stylesheet" href="{{ pathto('_static/' + style, 1) }}" type="text/css" />
+      
+      <!-- google analytics -->
+      <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-19516555-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+      </script>
+      <!-- end of google analytics -->
+   </head>
+   <body id="{{ pagename }}">
+      <div class="visual-portal-wrapper">
+         <div id="header" class="shadow">
+            <div class="content" id="header-user-menu">
+               <ul class="horListing">
+                  <li><a href="{{ pathto('index') }}">Home</a> | </li>
+                  <li><a href="{{ pathto('contact') }}">Contact</a> | </li>
+                  <li><a href="{{ pathto('demo') }}">Demo</a> | </li>
+                  <li><a href="{{ pathto('download') }}">Download</a> | </li>
+                  <li><a href="{{ pathto('developer') }}">Developer</a></li>
+               </ul>
+            </div>
+            <div id="header-top">
+               <div class="content" id="top-controls"><span id="logo"><a href="{{ pathto('index') }}"><img src="{{ pathto('_static/images/logo.gif', 1) }}" alt=""></img></a></span></div>
+               <div class="visualClear"></div>
+            </div>
+         </div>
+         <div id="main">
+            <div id="center">
+              {% block body %}{% endblock %}
+            </div>
+         </div>
+         <div id="footer">
+            <div class="osi-logo"><a href="/"><img src="{{ pathto('_static/images/osf-logo.gif', 1) }}" alt=""></img></a></div>
+            <ul class="extra horListing">
+               <li><a href="{{ pathto('index') }}">home</a> | </li>
+               <li><a href="{{ pathto('contact') }}">contact</a></li>
+            </ul>
+            <div id="offices-wrapper">
+               <p id="portal-copyright">&copy;{{copyright}}</p>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
+

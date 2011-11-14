@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+	  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal">
+ <head>
+   <title>KARL3 Forms Macros</title>
+ </head>
+ <body>
+
+
+    <fieldset metal:define-macro="name-field"
+	      tal:define="error fielderrors['name']|None">
+      <label>Name <span class="required">&nbsp;</span></label>
+      <input name="name"/>
+      <div tal:condition="error" class="error">${error}</div>
+    </fieldset>
+
+    <fieldset metal:define-macro="age-field"
+	      tal:define="error fielderrors['age']|None">
+      <label>Age <span class="required">&nbsp;</span></label>
+      <input name="age"/>
+      <div tal:condition="error" class="error">${error}</div>
+    </fieldset>
+
+    <fieldset metal:define-macro="country-field"
+	      tal:define="error fielderrors['country']|None">
+      <label>Country</label>
+      <select name="country" size="3">
+	<option value="${c[0]}" 
+		tal:repeat="c vocabularies['countries']">${c[1]}</option>
+      </select>
+      <div tal:condition="error" class="error">${error}</div>
+    </fieldset>
+
+    <fieldset metal:define-macro="form-submit">
+      <input type="submit" name="form.submitted"/>
+    </fieldset>
+
+ </body>
+</html>

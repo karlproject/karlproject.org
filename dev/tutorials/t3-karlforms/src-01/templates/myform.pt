@@ -1,0 +1,14 @@
+<html xmlns:tal="http://xml.zope.org/namespaces/tal">
+
+  <form method="post" action="${request.url}" class="${formerror}">
+    <fieldset>
+      <label>Age <span class="required">&nbsp;</span></label>
+      <input name="age"/>
+      <div tal:condition="fielderror" class="error">${fielderror}</div>
+    </fieldset>
+    <fieldset>
+      <input type="submit" name="form.submitted"/>
+    </fieldset>
+  </form>
+
+</html>

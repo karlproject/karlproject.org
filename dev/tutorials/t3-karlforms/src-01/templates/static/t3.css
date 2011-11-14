@@ -1,0 +1,11 @@
+
+
+.error {
+    margin-left: 3em;
+    color: yellow;
+}
+
+.required {
+    background-color: red;
+    padding-left: 0.4em;
+}

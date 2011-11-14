@@ -1,0 +1,34 @@
+<configure xmlns="http://namespaces.repoze.org/bfg">
+
+  <!-- this must be included for the view declarations to work -->
+  <include package="repoze.bfg.includes" />
+
+  <view
+     for="feedstool.models.interfaces.IFeedsContainer"
+     view=".site.list_feeds_view"
+     />
+
+  <view
+     for="feedstool.models.interfaces.IFeedsContainer"
+     view=".site.static_view"
+     name="static"
+     />
+
+  <view
+     for="feedstool.models.interfaces.IFeedsContainer"
+     view=".site.add_feed_view"
+     name="add_feed.html"
+     />
+
+  <view
+     for="feedstool.models.interfaces.IFeed"
+     view=".feed.show_feed_view"
+     />
+
+  <view
+     for="feedstool.models.interfaces.IFeedsContainer"
+     view=".site.search_view"
+     name="search.html"
+     />
+
+</configure>

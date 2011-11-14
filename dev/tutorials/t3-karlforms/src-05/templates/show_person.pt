@@ -1,0 +1,16 @@
+<div xmlns="http://www.w3.org/1999/xhtml" 
+     xmlns:tal="http://xml.zope.org/namespaces/tal"
+     xmlns:metal="http://xml.zope.org/namespaces/metal"
+     metal:use-macro="layout.macros['master']">
+
+  <div metal:fill-slot="content">
+
+    <ul>
+      <li>Name: ${context.name}</li>
+      <li>Age: ${context.age}</li>
+      <li>Country: ${context.country}</li>
+    </ul>
+
+  </div>
+
+</div>

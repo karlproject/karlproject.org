@@ -1,0 +1,13 @@
+<html xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal">
+
+  <form method="post" action="${request.url}">
+
+    <div metal:use-macro="formfields.macros['form-message']"/>
+    <fieldset metal:use-macro="formfields.macros['name-field']"/>
+    <fieldset metal:use-macro="formfields.macros['age-field']"/>
+    <fieldset metal:use-macro="formfields.macros['country-field']"/>
+    <fieldset metal:use-macro="formfields.macros['form-submit']"/>
+  </form>
+
+</html>

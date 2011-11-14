@@ -1,0 +1,286 @@
+/** =COMMON
+----------------------------------------------- */
+body {
+  margin: 0;
+  padding: 0;	
+  font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+  font-size: 0.9em;
+  font-weight:lighter;
+  background-color: #fff;
+  color: #333;
+  text-align: center;
+}
+h1, h2, h3 { 
+  margin: 0 0 0.5em 0;
+  clear: both;   
+} 
+h1 { 
+  font-size: 1.8em; 
+  font-weight: normal;
+  font-family:Georgia,Palatino,Times New Roman;
+}
+h2 { 
+  font-size: 1.3em; 
+}
+h3 { 
+  font-size: 1.2em; letter-spacing: 0; 
+}
+h3 div { 
+  color: #333333;
+}
+h4 {
+  font-size: 1.1em;
+}
+a {
+  color: #3A74A9;
+}
+a:hover  {
+  text-decoration: underline;
+  cursor: pointer;
+}
+table {
+  font-size: 1em;
+}
+pre {
+  background-color:#F0F2F4;
+  border:1px solid #CECECE;
+  color:black;
+  font-size:125%;
+  overflow:auto;
+  width: 95%;
+  padding:10px;
+  padding-bottom: 20px
+}
+dt, strong {
+  font-weight:bold;
+}
+a em {
+  font-style: normal;
+}
+/** =SHARED
+----------------------------------------------- */
+.content {
+	width: 952px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/** =CLEAR HACKS
+----------------------------------------------- */
+
+.visualClear {
+  clear: both; 
+  font-size: 1px;
+}
+
+
+/** =LAYOUT STRUCTURE
+----------------------------------------------- */
+.visual-portal-wrapper {
+  width: 1003px;
+  text-align: center;
+  margin: 0 auto;
+}
+#header {
+  text-align: center;
+} 
+
+#main {
+  width: 952px;
+  margin: 0px auto;
+  text-align: left;
+  border-bottom: 1px solid #CECECE;
+  background: #f0f2f4 url('images/content_bg.gif') top left repeat-y;
+  padding-bottom: 3.5em;
+  padding-top: 15px;
+}
+
+/* clear float */
+#main:after {
+  content: "."; 
+  display: block; 
+  height: 0; 
+  clear: both; 
+  visibility: hidden;
+}
+#main {display: inline-block;}
+/* Hides from IE-mac \*/
+* html #main {height: 1%;}
+#main {display: block;}
+/* End hide from IE-mac */
+
+#center {
+  float: left;
+  display: inline;
+  background-color: #FFF;
+  border: 1px solid #CECECE;
+  padding: 10px;
+  margin: 0 15px 15px 15px;
+}
+
+/** =HEADER
+----------------------------------------------- */
+#header-user-menu {
+	font-size: 0.9em;
+	text-transform: uppercase;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  text-align: right;
+}
+ul.horListing {
+  margin: 0 20px;
+  padding: 0;
+  list-style: none;
+}
+ul.horListing li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: inline;
+}
+.horListing a,
+.horListing a:visited {
+	color: #639332;	
+	text-decoration: none;
+  padding: 0 0.5em;
+}
+.horListing li.noborder a {
+  padding-right: 0;
+}
+#header-top {
+  background: #fff url("images/gradient-top.gif") top left repeat-x;
+  height: 55px;
+}
+#logo {
+  float: left;
+  display: inline;
+  margin: 7px 0px 0px 15px;
+  width: 129px;
+  height: 32px;
+}
+#logo a img {
+  border: none;
+  width: 129px;
+  height: 32px;    
+}
+
+/** =FOOTER
+----------------------------------------------- */
+#footer {
+  width: 932px;
+  margin: 0px auto;
+  padding: 10px 10px 70px;
+  color: #7E7E7E;
+  text-align: center;
+} 
+#footer a {
+  text-transform: uppercase;
+  color: #7E7E7E;
+  text-decoration: none;
+}
+#footer .selected {
+  font-weight: bold;
+}
+#footer .osi-logo {
+  float: left;
+  display: inline;
+  margin: 0px;
+  padding: 0px;
+}
+#footer .osi-logo img {border: none;}
+#footer .extra {
+  float: right;
+  display: inline;
+  font-size: 0.9em;
+}
+#footer .extra a{
+  color: #639332;
+}
+div#offices-wrapper {
+    padding:0 215px;
+    font-size: 0.8em;
+}  
+
+/** =INDEX PAGE
+----------------------------------------------- */
+#index table h2 {
+    text-align: center;
+}
+#index table ul {
+    margin-left: 7px;
+    padding-left: 7px;
+    font-size: 0.85em;
+}
+#index ul.compact {
+    margin-top:3px;
+    margin-bottom:3px;
+} 
+
+#index #about, #index #documentation, #index #developers, #demo #admin, #demo #affiliate, #demo #staff{
+  float: left;
+  display: inline;
+  width: 250px; 
+  margin-right: 50px;
+}
+#index #about h2, #index #documentation h2, #index #developers h2 {
+  margin-top: 25px;
+  text-align: center;
+}
+
+#index div.sidebar, #demo div.sidebar{
+    float: right;
+    display: inline;
+    padding: 30px;
+    border: solid gray 1px;
+    margin-left: 40px;
+    margin-right: 20px;
+    color: black;
+    font-size: larger;
+    font-weight: bold;
+    background-color: #F0F2F4;
+    text-decoration: none;
+    width: 100px;
+}
+#demo div.sidebar{
+    width: 200px;
+    background: white;
+}
+/**
+#index .sidebar .sidebar-title {
+  display: none;
+}
+*/
+#demo .sidebar .sidebar-title {
+  text-align: center;
+}
+
+/** =DOWNLOAD PAGE
+----------------------------------------------- */
+#download div.admonition .admonition-title {
+  display: none;
+} 
+#download div.admonition p {
+  font-style: italic;
+}
+
+
+/** =NEW IN KARL 3 PAGE
+----------------------------------------------- */
+.featurebox {
+    margin-left: 20px;
+    margin-right: 5%;
+    clear:both;
+    margin-bottom: 60px;
+}
+div .figure {
+    float: right;
+    display: inline;
+    width: 210px;
+    margin-left: 20px;     
+    margin-bottom: 10px;
+    font-size: x-small;
+    text-align: center;
+    background-color: #F0F2F4;
+    color: black;
+    padding:5px; 
+}
