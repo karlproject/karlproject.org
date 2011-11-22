@@ -8,7 +8,10 @@ KARL Project Home
     :doc:`Download <download>`
 
 Welcome to the KARL project. KARL is an open source web system for
-collaboration, organizational intranets, and knowledge management. Developed by the  `Open Society Foundations <http://www.soros.org>`_ (OSF), it was first introduced to the market in 2008, and is now used by many international organizations, such as OXFAM GB, and OSF.
+collaboration, organizational intranets, and knowledge management. Developed
+by the  `Open Society Foundations <http://www.soros.org>`_ (OSF), it was
+first introduced to the market in 2008, and is now used by many
+international organizations, such as OXFAM GB, OSF, and more.
 
 This KARL project website is designed to address the following needs:
 
