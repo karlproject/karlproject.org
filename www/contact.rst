@@ -6,7 +6,6 @@ General Questions
 
 To get more information about the KARL project itself, please contact 
 `Tom Moroz <mailto:TMoroz@sorosny.org>`_ or 
-`Yalan Teng <mailto:YTeng@sorosny.org>`_ at the 
 `Open Society Foundations <http://www.soros.org/>`_. 
 Tom and Yalan have been the drivers for KARL from the beginning of the project.
 
