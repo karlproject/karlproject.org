@@ -12,8 +12,9 @@ At a high level, the technology stack as of KARL 3.0 uses:
   for OSI.
 * **Python**. The `Python <http://python.org>`_ programming language is
   used for the implementation of KARL.
-* **BFG**. Although much of the web framework used by KARL comes from a number
-  of popular Python tools, `BFG <http://bfg.repoze.org>`_ is the web
+* **Pyramid**. Although much of the web framework used by KARL comes from a
+  number of popular Python tools, `Pyramid
+  <http://docs.pylonsproject.org/en/latest/docs/pyramid.html>`_ is the web
   microframework that glues the application together.
 * **ZODB object database**. Content is stored and searched using the object
   database from the `Zope <http://zope.org>`_ project, also used by Plone.
