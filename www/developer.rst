@@ -23,3 +23,8 @@ Developers
 ==========
 
 To get started with with a local build, check out `github <https://github.com/karlproject/dev-buildout>`_.
+
+IRC
+===
+
+You can find us on IRC at #karl on freenode.
