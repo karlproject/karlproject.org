@@ -15,7 +15,6 @@ ALLSPHINXOPTS		= -d build/doctrees $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) .
 
 help:
 	@echo "Please use \`make <target>' where <target> is one of"
-	@echo "	 changelog to export KARL changelog into changeslog.rst"
 	@echo "	 html			 to make standalone HTML files"
 	@echo "	 pickle		 to make pickle files"
 	@echo "	 json			 to make JSON files"
@@ -28,7 +27,6 @@ clean:
 	-rm -rf build/*
 
 html:
-	python changelogs.py
 	mkdir -p build/html build/doctrees
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) build/html
 	@echo
