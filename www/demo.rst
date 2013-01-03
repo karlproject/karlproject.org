@@ -5,7 +5,7 @@ KARL Demo
 
         <div class="sidebar">
         <p class="first sidebar-title">Try It:</p>
-        <p><a class="reference external" href="http://demo1.karl.sixfeetup.com/" target="karldemo">
+        <p><a class="reference external" href="http://www.karldemo.com/" target="karldemo">
         <img src="_static/images/launch_demo.jpg" alt="Launch Demo Site"/>
         </a></p>
         </div>
