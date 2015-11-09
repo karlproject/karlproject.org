@@ -1,2 +1,0 @@
-
-// Use jQuery for wiring
