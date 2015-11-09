@@ -194,3 +194,11 @@ KARL Project Improvements
   strong part of the development culture.
 * **Diverse developers.** Developers from 7 organizations participated in the
   development of KARL3.
+
+Detailed Changelogs
+===================
+
+.. toctree::
+   :maxdepth: 1
+   
+   changelogs/index

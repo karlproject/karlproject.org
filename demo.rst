@@ -6,11 +6,12 @@ KARL Demo
         <div class="sidebar">
         <p class="first sidebar-title">Try It:</p>
         <p><a class="reference external" href="http://www.karldemo.com/" target="karldemo">
-        <img src="_static/images/launch_demo.jpg" alt="Launch Demo Site"/>
+        <img src="static/images/launch_demo.jpg" alt="Launch Demo Site"/>
         </a></p>
         </div>
 
-KARL is an open source web system for collaborative intranets and knowledge management. Boasting strong social networking features, it was developed by the Open Society Foundations (OSF) and is used by many international organizations, such as Oxfam GB and OSF.
+KARL is an open source web system for collaborative intranets and knowledge
+management, boasting strong social networking features.
 
 KARL's Top Features:
 
@@ -29,7 +30,7 @@ Login Information for Demo Accounts:
 Admin
 -----
 
-.. image:: _static/images/adminUser.png
+.. image:: static/images/adminUser.png
 
 Username: **admin**
 
@@ -38,7 +39,7 @@ Password: **admin**
 Staff
 -----
 
-.. image:: _static/images/staffUser.png
+.. image:: static/images/staffUser.png
 
 Username: **staff1**
 
@@ -47,10 +48,8 @@ Password: **staff1**
 Affiliate
 ---------
 
-.. image:: _static/images/affiliateUser.png
+.. image:: static/images/affiliateUser.png
 
 Username: **affiliate1**
 
 Password: **affiliate1**
-
-
