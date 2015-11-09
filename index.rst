@@ -6,10 +6,7 @@ KARL Project Home
     :doc:`Demo <demo>`
     
 Welcome to the KARL project. KARL is an open source web system for
-collaboration, organizational intranets, and knowledge management. Developed
-by the  `Open Society Foundations <http://www.soros.org>`_ (OSF), it was
-first introduced to the market in 2008, and is now used by many
-international organizations, such as OXFAM GB, OSF, and more.
+collaboration, organizational intranets, and knowledge management.
 
 This KARL project website is designed to address the following needs:
 
@@ -25,9 +22,9 @@ About
 .. toctree::
    :maxdepth: 1
 
-   background
-   Top KARL Questions <topquestions>
    contact
+   demo
+   isandisnot
 
 
 Documentation
@@ -44,5 +41,7 @@ Documentation
 Developers
 ==========
 
-* `Buildout <https://github.com/karlproject/dev-buildout>`_
-* IRC: #karl on freenode
+.. toctree::
+   :maxdepth: 1
+
+   developer
